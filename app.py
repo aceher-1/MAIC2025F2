@@ -99,6 +99,9 @@ X_input = pd.DataFrame([row])[feature_list]
 # -------------------------------
 st.markdown("---")
 
-if st.button("🔮 Predict Monthly Premium"):
-    prediction = model.predict(X_input)[0]
-    st.success(f"### Your Estimated **Monthly Medical Insurance Premium** is: **${prediction:.2f}**")
+if st.button("🔮 Predict Premiums"):
+    monthly_premium = model.predict(X_input)[0]
+    annual_premium = monthly_premium * 12
+
+    st.success(f"### 🧾 Estimated *Monthly* Medical Insurance Premium: **${monthly_premium:.2f}**")
+    st.info(f"### 📅 Estimated *Annual* Medical Insurance Premium: **${annual_premium:.2f}**")
