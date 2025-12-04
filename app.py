@@ -12,10 +12,10 @@ feature_list = joblib.load("feature_list.pkl")
 # -------------------------------
 # Header / UI introduction
 # -------------------------------
-st.title("🏥 Medical Insurance Premium Predictor")
+st.title("Medical Insurance Premium Predictor")
 
 st.markdown("""
-### **Predict Your Estimated *Monthly* Medical Insurance Premium**
+### **Predict Your Estimated Monthly Medical Insurance Premium**
 
 This application uses a trained machine learning model to estimate a person's 
 **expected monthly medical insurance premium** based on their demographics, 
@@ -30,7 +30,7 @@ st.markdown("---")
 # User Input Widgets
 # -------------------------------
 
-st.subheader("🔹 Basic Information")
+st.subheader("Basic Information")
 
 age = st.number_input("Age", 18, 100, 40)
 income = st.number_input("Annual Income ($)", 0, 500000, 50000)
@@ -38,7 +38,7 @@ bmi = st.number_input("BMI", 10.0, 60.0, 27.5)
 dependents = st.number_input("Number of Dependents", 0, 10, 0)
 
 st.markdown("---")
-st.subheader("🔹 Medical History")
+st.subheader("Medical History")
 
 hospitalizations_last_3yrs = st.number_input("Hospitalizations (last 3 years)", 0, 20, 0)
 days_hospitalized_last_3yrs = st.number_input("Total Days Hospitalized (last 3 years)", 0, 200, 0)
@@ -46,7 +46,7 @@ medication_count = st.number_input("Medication Count", 0, 50, 0)
 chronic_count = st.number_input("Chronic Condition Count", 0, 20, 0)
 
 st.markdown("---")
-st.subheader("🔹 Medical Service Usage")
+st.subheader("Medical Service Usage")
 
 proc_imaging_count = st.number_input("Imaging Procedures", 0, 50, 0)
 proc_surgery_count = st.number_input("Surgical Procedures", 0, 50, 0)
@@ -54,7 +54,7 @@ proc_consult_count = st.number_input("Consultations", 0, 100, 0)
 proc_lab_count = st.number_input("Lab Procedures", 0, 100, 0)
 
 st.markdown("---")
-st.subheader("🔹 Categorical Inputs")
+st.subheader("Categorical Inputs")
 
 sex = st.selectbox("Sex", ["Male", "Female"])
 smoker = st.selectbox("Smoking Status", ["Never", "Former", "Current"])
