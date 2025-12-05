@@ -15,13 +15,13 @@ feature_list = joblib.load("feature_list.pkl")
 st.title("Medical Insurance Premium Predictor")
 
 st.markdown("""
-### **Predict Your Estimated Monthly Medical Insurance Premium**
+### **Predict Your Estimated  Insurance Premium**
 
 This application uses a trained machine learning model to estimate a person's 
-**expected monthly medical insurance premium** based on their demographics, 
+**expected monthly and annual medical insurance premium** based on their demographics, 
 health factors, and medical utilization history.
 
-Please provide accurate information below to receive a personalized monthly premium estimate.
+Please provide accurate information below to receive a personalized premium estimate.
 """)
 
 st.markdown("---")
