@@ -103,5 +103,5 @@ if st.button("🔮 Predict Premiums"):
     monthly_premium = model.predict(X_input)[0]
     annual_premium = monthly_premium * 12
 
-    st.success(f"### 🧾 Estimated *Monthly* Medical Insurance Premium: **${monthly_premium:.2f}**")
-    st.info(f"### 📅 Estimated *Annual* Medical Insurance Premium: **${annual_premium:.2f}**")
+    st.success(f"### 🧾 Estimated **Monthly** Medical Insurance Premium: **${monthly_premium:.2f}**")
+    st.info(f"### 📅 Estimated **Annual** Medical Insurance Premium: **${annual_premium:.2f}**")
